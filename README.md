@@ -31,11 +31,24 @@ The FlappyBird class handles all the game logic, rendering, and user input.<br><
 Bird: Represents the player's character.<br></br>
 Pipes: Randomly placed obstacles for the bird to avoid.<br></br>
 Score & High Score: Tracks the player's score, and saves the highest score in a file named highscore.txt.<br></br>
-Key Methods:<br></br>
+<br></br> **Key Methods:** <br></br>
 paintComponent(Graphics g): Draws the background, bird, pipes, score, and high score.<br></br>
 move(): Handles the movement of the bird and pipes, including gravity and velocity changes.<br></br>
 collision(): Detects if the bird collides with any pipe, ending the game.<br></br>
 placePipes(): Randomly generates pipes at regular intervals.<br></br>
 loadHighScore() and saveHighScore(): Manages saving and loading the high score from highscore.txt.<br></br>
-Controls:<br></br>
+<br></br> **Controls:** <br></br>
 Spacebar: Press to make the bird jump.<br></br>
+
+
+## High Score File
+The game stores the high score in a file named highscore.txt. This file will be created in the same directory as the game if it doesn't already exist.
+
+**High score loading:** The game attempts to read the high score from the file when it starts.<br></br>
+**High score saving:** If the player's score exceeds the current high score, the new high score will be saved at the end of the game.<br></br>
+
+
+## Customization
+
+You can modify the dimensions of the game board, bird, or pipes by adjusting the respective variables inside the FlappyBird class.<br></br>
+To use your own images for the bird or background, replace the image files in the resources folder with your own assets and update the file paths accordingly in FlappyBird.java.
