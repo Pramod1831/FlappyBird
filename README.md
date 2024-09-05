@@ -4,6 +4,6 @@ A simple clone of the popular game Flappy Bird built using Java and Swing for th
 
 ## Game Screenshot
 
-![Flappy Bird Screenshot](images/screenshot.png)
+![Flappy Bird Screenshot](FlappyBird/screenshot.png)
 
 
